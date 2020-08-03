@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8765232108306793985}
   - component: {fileID: 8765232108306793984}
   - component: {fileID: 8365664275411917536}
+  - component: {fileID: -3540908210504576751}
   m_Layer: 0
   m_Name: EnemyBall
   m_TagString: Enemy
@@ -106,8 +107,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e063639e312ea5f4b8b39ddf026b069c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  hp: 100
-  moneyValue: 50
+  hp: 400
+  maxHp: 0
+  baseSpeed: 5
+  currentSpeed: 0
+  worth: 50
   emenyDeathEffect: {fileID: 7873010800630016402, guid: fdf019e3188cb1f4e87214b4a8d10f0a,
     type: 3}
+--- !u!114 &-3540908210504576751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8765232108306793987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 27d68186050494141bdf9d3bb90e053e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

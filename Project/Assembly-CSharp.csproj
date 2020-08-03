@@ -11,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{0A74402B-4424-3EDA-1AEE-DBFD06C47801}</ProjectGuid>
+    <ProjectGuid>{5B9FF267-005F-A3BF-219E-FEAE2D8C894F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -62,19 +62,26 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\BuildTowerManager.cs" />
-    <Compile Include="Assets\EnemyBall.cs" />
-    <Compile Include="Assets\LivesUI.cs" />
-    <Compile Include="Assets\MainCameraContoller.cs" />
-    <Compile Include="Assets\MoneyUI.cs" />
-    <Compile Include="Assets\Node.cs" />
-    <Compile Include="Assets\PlayerStats.cs" />
-    <Compile Include="Assets\Shop.cs" />
-    <Compile Include="Assets\TowerBlueprint.cs" />
-    <Compile Include="Assets\Turret.cs" />
-    <Compile Include="Assets\TurretBullet.cs" />
-    <Compile Include="Assets\WaveSpawner.cs" />
-    <Compile Include="Assets\WayPoints.cs" />
+    <Compile Include="Assets\Scripts\Buffs\BuffElements.cs" />
+    <Compile Include="Assets\Scripts\Buffs\BuffElements_Burn.cs" />
+    <Compile Include="Assets\Scripts\Buffs\BuffElements_MoveSlow.cs" />
+    <Compile Include="Assets\Scripts\Buffs\BuffManager.cs" />
+    <Compile Include="Assets\Scripts\BuildTowerManager.cs" />
+    <Compile Include="Assets\Scripts\Enemies\Enemy.cs" />
+    <Compile Include="Assets\Scripts\Enemies\EnemyMove.cs" />
+    <Compile Include="Assets\Scripts\LivesUI.cs" />
+    <Compile Include="Assets\Scripts\MainCameraContoller.cs" />
+    <Compile Include="Assets\Scripts\MoneyUI.cs" />
+    <Compile Include="Assets\Scripts\Node.cs" />
+    <Compile Include="Assets\Scripts\PlayerStats.cs" />
+    <Compile Include="Assets\Scripts\Shop.cs" />
+    <Compile Include="Assets\Scripts\TowerProjectiles\TowerProjectile.cs" />
+    <Compile Include="Assets\Scripts\TowerProjectiles\TowerProjectileMissile.cs" />
+    <Compile Include="Assets\Scripts\Towers\Tower.cs" />
+    <Compile Include="Assets\Scripts\Towers\TowerBlueprint.cs" />
+    <Compile Include="Assets\Scripts\Towers\TowerEditor.cs" />
+    <Compile Include="Assets\Scripts\WaveSpawner.cs" />
+    <Compile Include="Assets\Scripts\WayPoints.cs" />
     <None Include="Assets\Fonts\Roboto\LICENSE.txt" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.15f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -607,39 +614,39 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.Timeline.Editor.csproj">
-      <Project>{81C4E856-CAF1-F3C9-325D-8F2CB0D20FE3}</Project>
+      <Project>{C6BD8850-C882-1DAF-0B08-3F8A02859E17}</Project>
       <Name>Unity.Timeline.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.VSCode.Editor.csproj">
-      <Project>{B5B01477-EE69-C958-D00A-98E2C448BA2A}</Project>
+      <Project>{678BAB3F-54EF-4724-C44B-12A1C8283D24}</Project>
       <Name>Unity.VSCode.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
-      <Project>{1E99AF04-24F1-5369-D981-EB3FF36EB33E}</Project>
+      <Project>{CFE2B0B6-F766-DFD0-18E3-41B175F9F015}</Project>
       <Name>Unity.TextMeshPro.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEngine.UI.csproj">
-      <Project>{0F40FBFC-D99C-88DF-4F0A-7ADE6A6DE5C5}</Project>
+      <Project>{A30111FA-DFBE-C300-CA8D-566E6AF9622A}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Timeline.csproj">
-      <Project>{E150B9DB-2E6F-96C5-F42F-FF7DB34CF9F6}</Project>
+      <Project>{5C9F5083-7B63-40D4-65F5-0B969E5D671B}</Project>
       <Name>Unity.Timeline</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.CollabProxy.Editor.csproj">
-      <Project>{6F892D6B-86C2-09B8-87FE-4A86A78641F4}</Project>
+      <Project>{E65D0389-BCE8-7ECB-036A-C1F8B6CE8E2A}</Project>
       <Name>Unity.CollabProxy.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Rider.Editor.csproj">
-      <Project>{6F83B406-CC94-68FA-7612-F4949DCFD6C5}</Project>
+      <Project>{4202DCF7-3014-6E1A-BAF5-116440ACD488}</Project>
       <Name>Unity.Rider.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.csproj">
-      <Project>{3B29AFE9-C6F5-D1BC-3D90-65D22D9254FF}</Project>
+      <Project>{E917068C-D27E-D63D-FBE7-0F1CB2359E6C}</Project>
       <Name>Unity.TextMeshPro</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
-      <Project>{A175DA0D-FDD5-97BB-20D5-066148D7E09A}</Project>
+      <Project>{6B83E877-1207-1E33-ACA6-B2A122B5A702}</Project>
       <Name>UnityEditor.UI</Name>
     </ProjectReference>
   </ItemGroup>
